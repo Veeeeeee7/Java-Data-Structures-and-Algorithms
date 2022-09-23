@@ -1,5 +1,3 @@
-package ArrayLists;
-
 import java.util.Objects;
 
 public class Employee {

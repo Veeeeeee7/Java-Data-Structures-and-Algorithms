@@ -1,9 +1,7 @@
-package ArrayLists;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayList {
+public class ArrayListMain {
     public static void main(String[] args) {
 
         List<Employee> employeeList = new ArrayList<Employee>();
