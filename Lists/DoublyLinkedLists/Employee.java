@@ -10,12 +10,14 @@ public class Employee {
     private String lastName;
     private int id;
 
+    // Constructor
     public Employee(String firstName, String lastName, int id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.id = id;
     }
 
+    //Getters and Setters
     public String getFirstName() {
         return firstName;
     }
@@ -40,6 +42,7 @@ public class Employee {
         this.id = id;
     }
 
+    // equals method
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -52,6 +55,7 @@ public class Employee {
         return lastName.equals(employee.lastName);
     }
 
+    // hashCode method
     @Override
     public int hashCode() {
         int result = firstName.hashCode();
@@ -60,6 +64,7 @@ public class Employee {
         return result;
     }
 
+    // toString method
     @Override
     public String toString() {
         return "Employee{" +
