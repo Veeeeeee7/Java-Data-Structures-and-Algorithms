@@ -1,6 +1,6 @@
 package SinglyLinkedList;
 
-public class LinkedListMain {
+public class Main {
     public static void main(String[] args) {
 
         // Create employees
