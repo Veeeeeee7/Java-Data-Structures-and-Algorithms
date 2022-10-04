@@ -1,10 +1,11 @@
-// import java.util.ArrayList;
+package Vectors;
+
 import java.util.List;
 import java.util.Vector;
 
 import ArrayLists.Employee;
 
-public class VectorMain {
+public class Main {
     public static void main(String[] args) {
         List<Employee> employeeList = new Vector<>();
         employeeList.add(new Employee("Jane", "Jones", 123));
