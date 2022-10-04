@@ -2,6 +2,8 @@
 import java.util.List;
 import java.util.Vector;
 
+import ArrayLists.Employee;
+
 public class VectorMain {
     public static void main(String[] args) {
         List<Employee> employeeList = new Vector<>();

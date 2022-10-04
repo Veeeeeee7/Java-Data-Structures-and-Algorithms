@@ -1,16 +1,23 @@
+package ArrayLists;
 import java.util.Objects;
+
+/*
+ * This class is used to create an Employee object.
+ */
 
 public class Employee {
     private String firstName;
     private String lastName;
     private int id;
 
+    // Constructor for the Employee object
     public Employee(String firstName, String lastName, int id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.id = id;
     }
 
+    // Getters and Setters
     public String getFirstName() {
         return firstName;
     }
@@ -35,6 +42,7 @@ public class Employee {
         this.id = id;
     }
 
+    // toString method
     @Override
     public String toString() {
         return "Employee{" +
@@ -44,6 +52,7 @@ public class Employee {
                 '}';
     }
 
+    // equals method
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -52,6 +61,7 @@ public class Employee {
         return id == employee.id && firstName.equals(employee.firstName) && lastName.equals(employee.lastName);
     }
 
+    // hashCode method
     @Override
     public int hashCode() {
         return Objects.hash(firstName, lastName, id);

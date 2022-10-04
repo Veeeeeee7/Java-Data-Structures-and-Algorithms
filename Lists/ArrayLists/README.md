@@ -1,0 +1,5 @@
+# Array Lists
+
+Array list is a resizeable array with a list interface (has much of the functionality of lists built in). It is backed by an array in java. Accessing data based will be efficient (constant time complexity O(1)) because it just finds the data at a certain index. Finding the index of data / if containing data will have linear time complexity O(n) because it has to loop through the whole list. Adding a lot of items will be slow because the implementation will have to resize the backing array each time a new object is added. You can specify the initial capacity (the amount of items in the backing array) to avoid having to increase the size of the backing array when adding new items, which is different from the size (the amount of items in the array list). Removing items will also be slow because the implementation will have to shift all items after the removed one down in the backing array.
+
+Great if you are iterating over them. Fine if you need the size to vary, but not good if you add a bunch of items. Bad if you are removing items from the array.
