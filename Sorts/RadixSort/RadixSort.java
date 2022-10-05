@@ -1,14 +1,14 @@
 package RadixSort;
 
+import java.util.Arrays;
+
 public class RadixSort {
     public static void main(String[] args) {
         int[] radixArray = {4725, 4586, 1330, 8789, 1594, 5729};
 
         radixSort(radixArray, 10, 4);
 
-        for (int i = 0; i < radixArray.length; i++) {
-            System.out.println(radixArray[i]);
-        }
+        Arrays.stream(radixArray).forEach( i -> System.out.println(i));
     }
 
     public static void radixSort(int[] input, int radix, int width) {

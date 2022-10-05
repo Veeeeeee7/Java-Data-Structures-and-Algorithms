@@ -1,5 +1,7 @@
 package BubbleSort;
 
+import java.util.Arrays;
+
 public class BubbleSort {
     public static void main(String[] args) {
 
@@ -12,10 +14,7 @@ public class BubbleSort {
             }
         }
 
-        for (int i=0 ;i<intArray.length; i++){
-            System.out.println(intArray[i]);
-        }
-
+        Arrays.stream(intArray).forEach( i -> System.out.println(i));
     }
 
     public static void swap(int[] array, int i, int j){
