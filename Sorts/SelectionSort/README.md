@@ -20,4 +20,4 @@ Define a variable that stores the index of the largest number. Set index 1 as th
 -   O(n<sup>2</sup>) time complexity
     -   100 steps to sort 10 items, 10000 steps to sort 100 items
     -   Doesn't require as much swapping as bubble sort (usually performs better than bubble sort)
-    -   Unstable algorithm
+-   Unstable algorithm
