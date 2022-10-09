@@ -1,4 +1,4 @@
-package SinglyLinkedList;
+package SinglyLinkedLists;
 
 /*
  * This class is used to create a singly linked list of Employee objects.
