@@ -12,4 +12,3 @@ This folder focuses on Stacks and its array and linked list implementations.
 -   O(1) time complexity for push, pop, and peek when using a linked list
 -   O(n) time complexity for push when using an array (resizing)
 -   If you know the maximum number of items or if memory is limited, array is a better choice (there's no overhead with needing to store the top variable)
--
