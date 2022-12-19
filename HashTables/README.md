@@ -13,4 +13,3 @@ This folder focuses on Hash Tables and its array implementation and uses.
     -   Tells how full a hash table is
     -   If load factor is too high, collisions occur more often
     -   If load factor is too low, there are too many empty spaces
-    -
