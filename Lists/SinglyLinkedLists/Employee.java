@@ -1,4 +1,5 @@
-package SinglyLinkedLists;
+package Lists.SinglyLinkedLists;
+
 import java.util.Objects;
 
 /*
@@ -55,8 +56,10 @@ public class Employee {
     // equals method
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Employee employee = (Employee) o;
         return id == employee.id && firstName.equals(employee.firstName) && lastName.equals(employee.lastName);
     }

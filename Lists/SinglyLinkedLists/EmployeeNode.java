@@ -1,15 +1,16 @@
-package SinglyLinkedLists;
+package Lists.SinglyLinkedLists;
 
 /*
  * This class is used to create an Employee Node object
  */
 
 public class EmployeeNode {
-    
+
     private Employee employee;
     private EmployeeNode next;
 
-    // Constructor: each node only needs to know its own object (employee) and the next node
+    // Constructor: each node only needs to know its own object (employee) and the
+    // next node
     public EmployeeNode(Employee employee) {
         this.employee = employee;
     }
@@ -22,11 +23,11 @@ public class EmployeeNode {
     public EmployeeNode getNext() {
         return next;
     }
-    
+
     public void setEmployee(Employee employee) {
         this.employee = employee;
     }
-    
+
     public void setNext(EmployeeNode next) {
         this.next = next;
     }

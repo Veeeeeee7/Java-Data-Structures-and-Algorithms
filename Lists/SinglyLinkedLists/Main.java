@@ -1,4 +1,4 @@
-package SinglyLinkedLists;
+package Lists.SinglyLinkedLists;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,7 +15,9 @@ public class Main {
         // checks if the list is empty, which it is
         System.out.println(list.isEmpty());
 
-        // adds the employees to the list at the front, since the employees are always added to the front, the last employee added will be the first employee in the list
+        // adds the employees to the list at the front, since the employees are always
+        // added to the front, the last employee added will be the first employee in the
+        // list
         list.addToFront(janeJones);
         list.addToFront(johnDoe);
         list.addToFront(marySmith);
@@ -23,7 +25,7 @@ public class Main {
 
         // gets the size of the list
         System.out.println(list.getSize());
-        
+
         // prints the list
         list.printList();
 

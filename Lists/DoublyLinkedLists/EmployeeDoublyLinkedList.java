@@ -1,4 +1,4 @@
-package DoublyLinkedLists;
+package Lists.DoublyLinkedLists;
 
 public class EmployeeDoublyLinkedList {
 
@@ -14,11 +14,13 @@ public class EmployeeDoublyLinkedList {
     public void addToFront(Employee employee) {
         EmployeeNode node = new EmployeeNode(employee);
 
-        // If the list is empty, set the tail to the new node. later both the head and the tail will be set to the same node
+        // If the list is empty, set the tail to the new node. later both the head and
+        // the tail will be set to the same node
         if (head == null) {
             tail = node;
         }
-        // Otherwise, set the new node to the head, which points to the next node (the original head)
+        // Otherwise, set the new node to the head, which points to the next node (the
+        // original head)
         else {
             head.setPrevious(node);
             node.setNext(head);
@@ -32,11 +34,13 @@ public class EmployeeDoublyLinkedList {
     public void addToEnd(Employee employee) {
         EmployeeNode node = new EmployeeNode(employee);
 
-        // If the list is empty, set the head to the new node. later both the head and the tail will be set to the same node
+        // If the list is empty, set the head to the new node. later both the head and
+        // the tail will be set to the same node
         if (tail == null) {
             head = node;
         }
-        // Otherwise, set the new node to the tail, which points to the previous node (the original tail)
+        // Otherwise, set the new node to the tail, which points to the previous node
+        // (the original tail)
         else {
             tail.setNext(node);
             node.setPrevious(tail);
@@ -57,7 +61,8 @@ public class EmployeeDoublyLinkedList {
         // set the head of the current list to the node being removed
         EmployeeNode removedNode = head;
 
-        // if the head is the only node, set the tail also to null because when the list only has one object the head and tail both have the same node
+        // if the head is the only node, set the tail also to null because when the list
+        // only has one object the head and tail both have the same node
         if (head.getNext() == null) {
             tail = null;
         }
@@ -65,7 +70,7 @@ public class EmployeeDoublyLinkedList {
         else {
             head.getNext().setPrevious(null);
         }
-        
+
         // set the head to the next node in the list
         head = head.getNext();
         size--;
@@ -85,11 +90,12 @@ public class EmployeeDoublyLinkedList {
         // set the tail of the current list to the node being removed
         EmployeeNode removedNode = tail;
 
-        // if the tail is the only node, set the head also to null because when the list only has one object the head and tail both have the same node
+        // if the tail is the only node, set the head also to null because when the list
+        // only has one object the head and tail both have the same node
         if (tail.getPrevious() == null) {
             head = null;
         }
-        //otherwise, set the current tail to null
+        // otherwise, set the current tail to null
         else {
             tail.getPrevious().setNext(null);
         }
@@ -121,6 +127,5 @@ public class EmployeeDoublyLinkedList {
         }
         System.out.println("null");
     }
-
 
 }

@@ -1,4 +1,4 @@
-package LinkedLists;
+package Lists;
 
 public class Employee {
 
@@ -17,7 +17,7 @@ public class Employee {
         this.id = id;
     }
 
-    //Getters and Setters
+    // Getters and Setters
     public String getFirstName() {
         return firstName;
     }
@@ -45,13 +45,17 @@ public class Employee {
     // equals method
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
 
         Employee employee = (Employee) o;
 
-        if (id != employee.id) return false;
-        if (!firstName.equals(employee.firstName)) return false;
+        if (id != employee.id)
+            return false;
+        if (!firstName.equals(employee.firstName))
+            return false;
         return lastName.equals(employee.lastName);
     }
 

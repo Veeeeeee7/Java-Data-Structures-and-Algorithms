@@ -1,4 +1,4 @@
-package DoublyLinkedLists;
+package Lists.DoublyLinkedLists;
 
 /*
  * This class is used to create a doubly linked list of Employee objects.
