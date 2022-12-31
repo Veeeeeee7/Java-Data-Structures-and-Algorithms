@@ -1,7 +1,6 @@
-package HashTables.HashTables;
+package HashTables;
 
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,10 +9,19 @@ public class Main {
         Employee marySmith = new Employee("Mary", "Smith", 22);
         Employee mikeWilson = new Employee("Mike", "Wilson", 3245);
 
+        /*
+         * HashMaps
+         */
+
         HashMap<String, Employee> hashMap = new HashMap<>();
+
+        // adds a key and value pair to the hashMap
         hashMap.put("Jones", janeJones);
         hashMap.put("Doe", johnDoe);
         hashMap.put("Smith", marySmith);
+
+        // gets the value of the key
+        System.out.println(hashMap.get("Jones"));
 
         // Checks if the key already exists and if it does, it will not put the new
         // value in and will return the old value
@@ -25,15 +33,12 @@ public class Main {
         employee = hashMap.put("Doe", mikeWilson);
         System.out.println(employee);
 
+        // checks if the key/value exists
         // containsKeys() should be faster than containsValue()
         System.out.println(hashMap.containsKey("Doe"));
         System.out.println(hashMap.containsValue(janeJones));
 
-        // Iterator<Employee> iterator = hashMap.values().iterator();
-        // while (iterator.hasNext()) {
-        // System.out.println(iterator.next());
-        // }
-
+        // prints the hashMap
         hashMap.forEach((k, v) -> System.out.println("Key = " + k + ", Employee = " + v));
     }
 }
