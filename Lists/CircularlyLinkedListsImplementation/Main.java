@@ -1,4 +1,4 @@
-package Lists.CircularlyLinkedLists;
+package Lists.CircularlyLinkedListsImplementation;
 
 public class Main {
     public static void main(String[] args) {

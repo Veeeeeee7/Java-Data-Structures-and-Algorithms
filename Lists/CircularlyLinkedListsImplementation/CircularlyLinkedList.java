@@ -1,4 +1,4 @@
-package Lists.CircularlyLinkedLists;
+package Lists.CircularlyLinkedListsImplementation;
 
 public class CircularlyLinkedList {
     private Node head = null;

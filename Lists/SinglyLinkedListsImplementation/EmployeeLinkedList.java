@@ -1,4 +1,4 @@
-package Lists.SinglyLinkedLists;
+package Lists.SinglyLinkedListsImplementation;
 
 /*
  * This class is used to create a singly linked list of Employee objects.

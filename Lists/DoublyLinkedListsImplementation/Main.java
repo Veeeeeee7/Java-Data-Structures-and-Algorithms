@@ -1,4 +1,4 @@
-package Lists.DoublyLinkedLists;
+package Lists.DoublyLinkedListsImplementation;
 
 public class Main {
 

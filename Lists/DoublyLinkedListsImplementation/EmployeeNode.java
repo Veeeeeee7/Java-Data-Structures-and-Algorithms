@@ -1,16 +1,16 @@
-package Lists.SinglyLinkedLists;
+package Lists.DoublyLinkedListsImplementation;
 
 /*
- * This class is used to create an Employee Node object
+ * This class is used to create a doubly linked list of Employee objects.
  */
 
 public class EmployeeNode {
 
     private Employee employee;
     private EmployeeNode next;
+    private EmployeeNode previous;
 
-    // Constructor: each node only needs to know its own object (employee) and the
-    // next node
+    // Constructor
     public EmployeeNode(Employee employee) {
         this.employee = employee;
     }
@@ -20,20 +20,29 @@ public class EmployeeNode {
         return employee;
     }
 
-    public EmployeeNode getNext() {
-        return next;
-    }
-
     public void setEmployee(Employee employee) {
         this.employee = employee;
+    }
+
+    public EmployeeNode getNext() {
+        return next;
     }
 
     public void setNext(EmployeeNode next) {
         this.next = next;
     }
 
-    // when printing the node, it prints the each employee's toString method
+    public EmployeeNode getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(EmployeeNode previous) {
+        this.previous = previous;
+    }
+
+    // uses the to string of the employee object
     public String toString() {
         return employee.toString();
     }
+
 }
