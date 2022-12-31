@@ -1,4 +1,4 @@
-package HashTables.Chaining;
+package HashTables.LinearProbingImplementation;
 
 import java.util.Objects;
 

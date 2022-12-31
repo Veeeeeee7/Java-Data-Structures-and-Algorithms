@@ -1,4 +1,4 @@
-package HashTables.LinearProbing;
+package HashTables.LinearProbingImplementation;
 
 public class SimpleHashTable {
     private StoredEmployee[] hashtable;

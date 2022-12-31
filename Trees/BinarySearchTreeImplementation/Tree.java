@@ -1,4 +1,4 @@
-package Trees.BinarySearchTree;
+package Trees.BinarySearchTreeImplementation;
 
 public class Tree {
     private TreeNode root;

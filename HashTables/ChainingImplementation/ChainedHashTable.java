@@ -1,4 +1,4 @@
-package HashTables.Chaining;
+package HashTables.ChainingImplementation;
 
 import java.util.LinkedList;
 import java.util.ListIterator;

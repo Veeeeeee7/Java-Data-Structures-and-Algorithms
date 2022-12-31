@@ -1,4 +1,4 @@
-package HashTables.Chaining;
+package HashTables.ChainingImplementation;
 
 public class StoredEmployee {
     public String key;
