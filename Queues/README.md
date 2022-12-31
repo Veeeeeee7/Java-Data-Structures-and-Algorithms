@@ -1,7 +1,5 @@
 # Queues
 
-## Queue Interface
-
 -   Abstract data type
 -   first in, first out
 -   add (enqueue) and remove (dequeue) operations O(1)
