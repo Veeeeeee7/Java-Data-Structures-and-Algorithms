@@ -245,11 +245,6 @@ public class RedBlackBinarySearchTree extends BinarySearchTree {
             return node.right;
         }
 
-        // Node has no children -->
-        // * node is red --> just remove it
-        // * node is black --> replace it by a temporary NIL node (needed to fix the R-B
-        // rules)
-
         // if the node has no children...
         // remove it if it is red
         // replace it by a temporary NIL node if it is black
