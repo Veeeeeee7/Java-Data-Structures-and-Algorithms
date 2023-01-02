@@ -26,7 +26,7 @@ Trees are a data structure that consists of nodes in a parent / child relationsh
 -   a perfect binary tree is when every node has either 0 or 2 children and all the leaf nodes are at the same level
 -   a balanced binary tree is when the height of the left and right subtrees of every node differ by at most one
 
-## Binary Search Tree
+## [Binary Search Tree](/Trees/BinarySearchTree.java)
 
 ![Binary Search Tree](https://www.happycoders.eu/wp-content/uploads/2021/06/binary-search-tree-example-600x349.png)
 
@@ -37,7 +37,7 @@ Trees are a data structure that consists of nodes in a parent / child relationsh
     -   some algorithms will shift the nodes around to fix this
 -   uses in-order traversal to get the data in sorted order
 
-## Red-Black Tree
+## [Red-Black Tree](/Trees/RedBlackBinarySearchTree.java)
 
 ![](https://www.happycoders.eu/wp-content/uploads/2021/09/red-black-tree-example-with-nil-400x274.png)
 
