@@ -26,6 +26,7 @@ public class BinaryTreePrinter {
         for (Node node : nodes) {
             if (node != null) {
                 System.out.print(node.data);
+                // System.out.print(node.color == false ? "R" : "B");
                 newNodes.add(node.left);
                 newNodes.add(node.right);
             } else {
