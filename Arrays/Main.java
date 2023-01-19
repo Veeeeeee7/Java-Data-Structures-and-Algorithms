@@ -13,5 +13,10 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
+        System.out.println();
+
+        int[] arr2 = { -2, -3, 4, -1, -2, 1, 5, -3 };
+        KadaneAlgorithm.maxSubArraySum(arr2);
+
     }
 }
