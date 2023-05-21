@@ -8,12 +8,9 @@ public class TwoPointer {
         int[] nums = { -1, 0, 1, 2, -1, -4 };
         List<List<Integer>> res = tp.threeSum(nums);
         System.out.println(res);
-
-        String s = "bottle";
-        String ans = tp.reverseVowels(s);
-        System.out.println(ans);
     }
 
+    // 3Sum
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
@@ -46,37 +43,5 @@ public class TwoPointer {
                 }
             }
         }
-    }
-
-    public boolean isVowel(char x) {
-        return (x == 'a') || (x == 'e') || (x == 'i') || (x == 'o') || (x == 'u') || (x == 'A') || (x == 'E')
-                || (x == 'I') || (x == 'O') || (x == 'U');
-    }
-
-    public String reverseVowels(String s) {
-        int left = 0;
-        int right = s.length() - 1;
-
-        char[] chars = s.toCharArray();
-
-        while (left < right) {
-            while (left < s.length() && !isVowel(chars[left])) {
-                left++;
-            }
-            while (right >= 0 && !isVowel(chars[right])) {
-                right--;
-            }
-
-            if (left < right) {
-                char temp = chars[left];
-                chars[left] = chars[right];
-                chars[right] = temp;
-
-                left++;
-                right--;
-            }
-        }
-
-        return new String(chars);
     }
 }

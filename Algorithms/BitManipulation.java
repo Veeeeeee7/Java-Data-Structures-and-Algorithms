@@ -11,6 +11,7 @@ public class BitManipulation {
         System.out.println(ans);
     }
 
+    // Add Binary
     public String addBinary(String a, String b) {
         BigInteger x = new BigInteger(a, 2);
         BigInteger y = new BigInteger(b, 2);

@@ -10,6 +10,7 @@ public class RabinKarp {
         System.out.println(index);
     }
 
+    // Find the Index of the First Occurrence in a String
     public int hashValue(String s, int MOD) {
         int hash = 0;
         for (int i = 0; i < s.length(); i++) {
