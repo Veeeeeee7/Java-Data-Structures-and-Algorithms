@@ -177,4 +177,29 @@ public class StringArray {
         }
         return false;
     }
+
+    // String Compression
+    public int compress(char[] chars) {
+        int i = 0;
+        int ans = 0;
+        while (i < chars.length) {
+            int group = 1;
+            while (i + group < chars.length && chars[i + group] == chars[i]) {
+                group++;
+            }
+
+            chars[ans] = chars[i];
+            ans++;
+
+            if (group > 1) {
+                // chars[ans] = Integer.toString(group).toCharArray()[0];
+                for (char c : Integer.toString(group).toCharArray()) {
+                    chars[ans++] = c;
+                }
+            }
+
+            i += group;
+        }
+        return ans;
+    }
 }
