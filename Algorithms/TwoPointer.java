@@ -59,4 +59,56 @@ public class TwoPointer {
             nums[i] = 0;
         }
     }
+
+    // Is Subsequence
+    public boolean isSubsequence(String s, String t) {
+        int sourceIndex = 0;
+        int targetIndex = 0;
+        while (sourceIndex < s.length() && targetIndex < t.length()) {
+            if (s.charAt(sourceIndex) == t.charAt(targetIndex)) {
+                sourceIndex++;
+            }
+            targetIndex++;
+        }
+        return sourceIndex == s.length();
+    }
+
+    // Container With Most Water
+    public int maxArea(int[] height) {
+        int max = 0;
+        int i = 0;
+        int j = height.length - 1;
+        while (i < j) {
+            int waterHeight = height[i] > height[j] ? height[j] : height[i];
+            max = waterHeight * (j - i) > max ? waterHeight * (j - i) : max;
+            if (height[i] > height[j]) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+        return max;
+    }
+
+    // Max Number of K-Sum Pairs
+    public int maxOperations(int[] nums, int k) {
+        Arrays.sort(nums);
+        int count = 0;
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left < right) {
+            if (nums[left] + nums[right] == k) {
+                left++;
+                right--;
+                count++;
+            } else if (nums[left] + nums[right] < k) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+        return count;
+    }
+
 }
